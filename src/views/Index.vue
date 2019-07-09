@@ -3,16 +3,36 @@
     <div class="champions-table">
       <div class="classes">
         <div class="origins"></div>
-        <div class="class">убийца</div>
-        <div class="class">мастер клинка</div>
-        <div class="class">дебошир</div>
-        <div class="class">элементалист</div>
-        <div class="class">страж</div>
-        <div class="class">стрелок</div>
-        <div class="class">рыцарь</div>
-        <div class="class">рэйнджер</div>
-        <div class="class">перевертыш</div>
-        <div class="class">чародей</div>
+        <div class="class">
+          <div class="class__text">убийца</div>
+        </div>
+        <div class="class">
+          <div class="class__text">мастер клинка</div>
+        </div>
+        <div class="class">
+          <div class="class__text">дебошир</div>
+        </div>
+        <div class="class">
+          <div class="class__text">элементалист</div>
+        </div>
+        <div class="class">
+          <div class="class__text">страж</div>
+        </div>
+        <div class="class">
+          <div class="class__text">стрелок</div>
+        </div>
+        <div class="class">
+          <div class="class__text">рыцарь</div>
+        </div>
+        <div class="class">
+          <div class="class__text">рэйнджер</div>
+        </div>
+        <div class="class">
+          <div class="class__text">перевертыш</div>
+        </div>
+        <div class="class">
+          <div class="class__text">чародей</div>
+        </div>
       </div>
 
       <div class="champions-table-row">
@@ -147,13 +167,17 @@ export default {
 
   .class {
     width: 10%;
-    height: 100px;
+    height: 200px;
     display: flex;
     text-align: center;
     align-items: center;
     justify-content: center;
     font-weight: bold;
     text-transform: uppercase;
+  }
+
+  .class__text {
+    transform: rotate(-90deg);
   }
 
   .champions {
@@ -169,6 +193,9 @@ export default {
     height: $rowHeight;
     padding: 5px;
     border: 3px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     img {
       width: 100%;
     }
