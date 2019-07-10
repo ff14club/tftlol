@@ -1,6 +1,6 @@
 {
-  "name": "lol-chess.local",
-  "short_name": "lol-chess.local",
+  "name": "LoLTFT",
+  "short_name": "LoLTFT",
   "icons": [
     {
       "src": "./img/icons/android-chrome-192x192.png",
