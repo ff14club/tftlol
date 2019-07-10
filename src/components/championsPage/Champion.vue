@@ -1,6 +1,8 @@
 <template>
-  <div class="champion" :style="`border-color: ${costColor}`">
-    <img :src=img alt="">
+  <div
+    class="champion"
+    :style="`border-color: ${costColor}; background-image: url(${img})`"
+  >
   </div>
 </template>
 
@@ -22,9 +24,7 @@ export default {
       if (this.cost === 4) {
         return 'purple';
       }
-      if (this.cost === 5) {
-        return '#ffb93b';
-      }
+      return '#ffb93b';
     },
   },
 };
@@ -34,9 +34,9 @@ export default {
   .champion {
     border: 2px solid;
     display: inline-block;
-    img {
-      width: 40px;
-      margin: 2px;
-    }
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    background-position: center;
   }
 </style>
