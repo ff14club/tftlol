@@ -5,11 +5,11 @@
       <router-link to="/rounds" class="submenu__link">Раунды</router-link>
       <router-link to="/goldXP" class="submenu__link">Золото/Опыт</router-link>
       <router-link to="/damage" class="submenu__link">Формула урона</router-link>
-      <router-link to="/reroll" class="submenu__link">Реролл</router-link>
-      <router-link to="/hotkeys" class="submenu__link">Горячие клавиши</router-link>
-      <router-link to="/little-legends" class="submenu__link">
-        Маленькие легенды
-      </router-link>
+      <router-link to="/reroll" class="submenu__link">Вероятность</router-link>
+<!--      <router-link to="/hotkeys" class="submenu__link">Горячие клавиши</router-link>-->
+<!--      <router-link to="/little-legends" class="submenu__link">-->
+<!--        Маленькие легенды-->
+<!--      </router-link>-->
     </div>
   </div>
 </template>

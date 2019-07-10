@@ -1,14 +1,13 @@
 <template>
   <div id="app">
     <Header/>
-    <router-view/>
+    <main>
+      <router-view/>
+    </main>
     <Footer/>
   </div>
 </template>
 
-<style lang="scss">
-  @import "assets/style/main";
-</style>
 <script>
 import Header from './components/app/Header.vue';
 import Footer from './components/app/Footer.vue';
@@ -20,3 +19,14 @@ export default {
   },
 };
 </script>
+
+<style lang="scss">
+  @import "assets/style/main";
+
+  #app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+</style>
+
