@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Index from './views/Index.vue';
+import Index from './views/Home/Index.vue';
+import Rounds from './views/Home/Rounds.vue';
 import Champions from './views/Champions.vue';
 
 Vue.use(Router);
@@ -11,6 +12,11 @@ export default new Router({
       path: '/',
       name: 'index',
       component: Index,
+    },
+    {
+      path: '/rounds',
+      name: 'rounds',
+      component: Rounds,
     },
     {
       path: '/champions',
