@@ -42,3 +42,23 @@ a {
     height: 100%;
   }
 }
+
+table {
+  thead {
+    background-color: #343A40;
+    color: #ffffff;
+    tr {
+      th {
+        padding: 20px;
+      }
+    }
+  }
+  tbody {
+    tr {
+      border-bottom: 1px solid #000;
+      td {
+        padding: 20px;
+      }
+    }
+  }
+}

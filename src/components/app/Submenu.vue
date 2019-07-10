@@ -39,6 +39,10 @@ export default {
     color: #ffffff;
     padding: 10px 20px;
     display: inline-block;
+    border-bottom: 5px solid transparent;
+    &.router-link-exact-active {
+      border-color: #E24E00;
+    }
   }
 
 </style>
