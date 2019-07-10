@@ -1,18 +1,7 @@
 <template>
   <div class="homepage">
-    <div class="homepage-menu">
-      <div class="container homepage-menu-container">
-<!--        <router-link to="/patch-notes" class="homepage-menu__link">Патчи</router-link>-->
-        <router-link to="/rounds" class="homepage-menu__link">Раунды</router-link>
-        <router-link to="/goldXP" class="homepage-menu__link">Золото/Опыт</router-link>
-        <router-link to="/damage" class="homepage-menu__link">Формула урона</router-link>
-        <router-link to="/reroll" class="homepage-menu__link">Реролл</router-link>
-        <router-link to="/hotkeys" class="homepage-menu__link">Горячие клавиши</router-link>
-        <router-link to="/little-legends" class="homepage-menu__link">
-          Маленькие легенды
-        </router-link>
-      </div>
-    </div>
+
+    <Submenu/>
 
     <div class="homepage-preview" style="background-image: url(/images/img-mainbg.jpg)">
       <div class="homepage-preview__sitename">LoLTFT.RU</div>
@@ -30,23 +19,15 @@
 </template>
 
 <script>
+import Submenu from '../../components/app/Submenu.vue';
+
 export default {
   name: 'Index',
+  components: { Submenu },
 };
 </script>
 
 <style scoped lang="scss">
-
-  .homepage-menu {
-    background-color: #484850;
-  }
-
-  .homepage-menu__link {
-    color: #ffffff;
-    padding: 10px 20px;
-    display: inline-block;
-  }
-
   .homepage-preview {
     height: 350px;
     background-size: cover;

@@ -1,5 +1,8 @@
 <template>
   <div class="rounds">
+
+    <Submenu :margin="true"/>
+
     <div class="container">
       <div class="rounds-title">Раунды</div>
 
@@ -207,15 +210,17 @@
 </template>
 
 <script>
+import Submenu from '../../components/app/Submenu.vue';
+
 export default {
   name: 'Rounds',
+  components: { Submenu },
 };
 </script>
 
 <style scoped lang="scss">
-
   .rounds {
-    margin: 50px 0;
+    margin-bottom: 50px;
   }
 
   .rounds-title {
