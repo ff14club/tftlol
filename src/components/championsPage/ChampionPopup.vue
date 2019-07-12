@@ -2,7 +2,7 @@
   <div class="champion-popup-wrapper" @click="closePopup">
     <div class="champion-popup" v-if="championData">
       <div class="champion-popup__name">
-        {{championData.name}} (Стоимость: {{championData.price}})
+        {{championData.name}} <span><img src="/images/coin.svg" alt=""> {{championData.price}}</span>
       </div>
       <div class="champion-popup__origin">{{championData.origin}}</div>
       <div class="champion-popup__class">{{championData.cclass}}</div>
@@ -15,7 +15,7 @@
       <div class="champion-popup__spelldamage" v-html="championData.spellDamage"></div>
       <div class="champion-popup__recommenditems">{{championData.recommendItems}}</div>
     </div>
-    <div class="loading" v-else>Loading...</div>
+    <div class="loading" v-else>Загрузка...</div>
   </div>
 </template>
 
@@ -54,12 +54,22 @@ export default {
     max-width: 600px;
     padding: 30px;
     color: rgba(#fff, .8);
+    border: 2px solid saddlebrown;
   }
 
   .champion-popup__name {
     margin-bottom: 20px;
     font-weight: bold;
     font-size: 20px;
+    span {
+      font-size: 16px;
+      display: inline-flex;
+      align-items: center;
+      img {
+        width: 10px;
+        margin-right: 3px;
+      }
+    }
   }
 
   .champion-popup__class {
