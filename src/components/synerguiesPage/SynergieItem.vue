@@ -12,7 +12,15 @@
       <!--        </div>-->
       <!--      </div>-->
     </div>
-    <div class="synergies-page-item__body" v-html="synergieText"></div>
+    <div class="synergies-page-item__body">
+      <div
+        class="synergies-page-item__body-text"
+        v-for="(item, key) in synergieText"
+        :key="key"
+        v-html="item"
+      >
+      </div>
+    </div>
   </div>
 </template>
 
@@ -53,5 +61,9 @@ export default {
 
   .synergies-page-item__body {
     padding: 10px;
+  }
+
+  .synergies-page-item__body-text {
+    margin-bottom: 3px;
   }
 </style>
