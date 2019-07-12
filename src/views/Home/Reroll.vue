@@ -110,6 +110,10 @@ export default {
 
 <style scoped lang="scss">
 
+  .reroll {
+    margin-bottom: 50px;
+  }
+
   .reroll-title {
     font-weight: bold;
     font-size: 24px;

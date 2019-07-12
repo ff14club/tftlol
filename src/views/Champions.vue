@@ -583,7 +583,6 @@ export default {
 
   .champions-page {
     background-color: #222222;
-    min-height: 100vh;
     padding: 40px 0;
   }
 

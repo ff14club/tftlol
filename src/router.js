@@ -5,6 +5,7 @@ import Rounds from './views/Home/Rounds.vue';
 import GoldXP from './views/Home/GoldXP.vue';
 import Damage from './views/Home/Damage.vue';
 import Reroll from './views/Home/Reroll.vue';
+import Synerguies from './views/Synergies.vue';
 import Champions from './views/Champions.vue';
 import Items from './views/Items.vue';
 
@@ -42,6 +43,11 @@ export default new Router({
       path: '/reroll',
       name: 'reroll',
       component: Reroll,
+    },
+    {
+      path: '/synerguies',
+      name: 'synerguies',
+      component: Synerguies,
     },
     {
       path: '/champions',

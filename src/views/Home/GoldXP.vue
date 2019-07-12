@@ -113,6 +113,10 @@ export default {
 
 <style scoped lang="scss">
 
+  .goldXP{
+    margin-bottom: 50px;
+  }
+
   .goldXP-title {
     font-weight: bold;
     font-size: 24px;

@@ -4,6 +4,7 @@
       <router-link to="/" class="header__logo">LoLTFT</router-link>
       <nav class="header-nav">
         <router-link to="/" class="header-nav__link">Главная</router-link>
+        <router-link to="/synerguies" class="header-nav__link">Синергии</router-link>
         <router-link to="/champions" class="header-nav__link">Чемпионы</router-link>
         <router-link to="/items" class="header-nav__link">Предметы</router-link>
       </nav>

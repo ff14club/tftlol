@@ -9,6 +9,7 @@ export default new Vuex.Store({
   state: {
     champion: null,
     showPopup: false,
+    synergies: [],
   },
   mutations: {
     LOAD_CHAMPION(state, champion) {
@@ -22,6 +23,10 @@ export default new Vuex.Store({
     TOGGLE_POPUP(state, payload) {
       state.showPopup = payload;
     },
+
+    LOAD_SYNERGIES(state, synerguies) {
+      state.synergies = synerguies;
+    },
   },
   actions: {
     async loadChampion({ commit }, name) {
@@ -34,6 +39,11 @@ export default new Vuex.Store({
     closePopup({ commit }) {
       commit('CLEAR_CHAMPION');
       commit('TOGGLE_POPUP', false);
+    },
+
+    async loadSynergies({ commit }) {
+      const synergies = await axios('/data/synergies.json');
+      commit('LOAD_SYNERGIES', synergies);
     },
   },
 });

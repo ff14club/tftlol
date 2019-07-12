@@ -62,6 +62,10 @@ export default {
 
 <style scoped lang="scss">
 
+  .damage{
+    margin-bottom: 50px;
+  }
+
   .damage-title {
     font-weight: bold;
     font-size: 24px;
