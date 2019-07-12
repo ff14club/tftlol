@@ -27,5 +27,6 @@ export default {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    min-width: 1300px;
   }
 </style>

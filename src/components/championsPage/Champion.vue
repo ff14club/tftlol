@@ -2,14 +2,16 @@
   <div
     class="champion"
     :style="`border-color: ${costColor}; background-image: url(${img})`"
+    @click="click"
   >
   </div>
 </template>
 
 <script>
+
 export default {
   name: 'Champion',
-  props: ['img', 'cost'],
+  props: ['img', 'cost', 'name'],
   computed: {
     costColor() {
       if (this.cost === 1) {
@@ -27,6 +29,11 @@ export default {
       return '#ffb93b';
     },
   },
+  methods: {
+    click() {
+      this.$store.dispatch('loadChampion', this.name);
+    },
+  },
 };
 </script>
 
@@ -38,5 +45,6 @@ export default {
     height: 40px;
     background-size: cover;
     background-position: center;
+    cursor: pointer;
   }
 </style>
